@@ -1,0 +1,7 @@
+
+financas.db
+
+__pycache__/
+*.pyc
+
+graficos_saida/

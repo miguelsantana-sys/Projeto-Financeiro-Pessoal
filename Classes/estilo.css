@@ -1,0 +1,77 @@
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+}
+ 
+/* Cartão de métrica (Total de entradas, saídas, saldo, etc) */
+.metric-card {
+    background: color-mix(in srgb, currentColor 6%, transparent);
+    border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+    border-radius: 12px;
+    padding: 1.1rem 1.4rem;
+    height: 100%;
+    color: inherit;
+}
+.metric-label {
+    font-size: 0.8rem;
+    opacity: 0.65;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.metric-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.metric-sub {
+    font-size: 0.8rem;
+    opacity: 0.65;
+    margin-top: 0.15rem;
+}
+/* Verde/vermelho são sempre fixos — é o padrão universal de
+   "positivo"/"negativo" em finanças, independente do tema */
+.metric-value.positivo { color: #34A853; }
+.metric-value.negativo { color: #E05252; }
+ 
+/* Cartão que envolve cada gráfico */
+.chart-card {
+    background: color-mix(in srgb, currentColor 6%, transparent);
+    border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+    border-radius: 12px;
+    padding: 1rem 1.25rem 0.25rem 1.25rem;
+    color: inherit;
+}
+.chart-card h4 {
+    margin-top: 0;
+    font-size: 1.05rem;
+    color: inherit;
+}
+ 
+/* Barra lateral: leve contraste, sem forçar cor fixa */
+section[data-testid="stSidebar"] {
+    border-right: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+}
+ 
+/* Botões de navegação (radio) na sidebar, com cara de menu */
+section[data-testid="stSidebar"] div[role="radiogroup"] label {
+    background: color-mix(in srgb, currentColor 4%, transparent);
+    border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.4rem;
+    width: 100%;
+}
+section[data-testid="stSidebar"] div[role="radiogroup"] label:has(input:checked) {
+    background: color-mix(in srgb, var(--primary-color, #7C3AED) 18%, transparent);
+    border-color: var(--primary-color, #7C3AED);
+}
+ 
+/* Container com borda usado nos filtros da página Resumo */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    background: color-mix(in srgb, currentColor 3%, transparent);
+}
+ 
+footer {visibility: hidden;}
+ 
