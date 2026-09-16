@@ -14,7 +14,6 @@ O MS Financeiro Pessoal foi desenvolvido com o objetivo de criar uma interface s
 -  Visualização dos gastos
 -  Organização das movimentações
 -  Controle do saldo
--  Interface adaptada para celular
 
 ##  Tecnologias utilizadas
 
